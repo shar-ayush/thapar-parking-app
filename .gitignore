@@ -1,0 +1,131 @@
+# ==============================================================================
+# Thapar Parking - Global .gitignore
+# Covers Django Backend, React Native Expo Mobile App, Environment, and OS files
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# Python & Django (Backend)
+# ------------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Django local runtime & static collection
+*.log
+local_settings.py
+staticfiles/
+media/
+
+# SQLite runtime locks and temporary files
+# Note: db.sqlite3 is kept tracked as it contains the pre-seeded campus lots & slots.
+# Uncomment the line below if you want to ignore local database modifications:
+# db.sqlite3
+*.sqlite3-journal
+*.sqlite3-shm
+*.sqlite3-wal
+
+# Pytest & Test artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+.mypy_cache/
+
+# ------------------------------------------------------------------------------
+# Node.js & React Native / Expo (Mobile)
+# ------------------------------------------------------------------------------
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Expo build and cache directories
+.expo/
+.expo-shared/
+web-build/
+dist/
+
+# Native build outputs & packages (APKs, AABs, etc.)
+*.apk
+*.aab
+*.ipa
+
+# Expo prebuild directories (if using local android/ios builds)
+# mobile/android/
+# mobile/ios/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Metro bundler cache
+.metro-health-check*
+
+# ------------------------------------------------------------------------------
+# Secrets, Certificates & Environment Variables
+# ------------------------------------------------------------------------------
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+
+# Mobile Keystores and Provisioning Profiles (NEVER commit signing keys)
+*.jks
+*.keystore
+*.p8
+*.p12
+*.key
+*.pem
+*.mobileprovision
+
+# ------------------------------------------------------------------------------
+# IDE & Code Editors
+# ------------------------------------------------------------------------------
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# JetBrains (PyCharm, WebStorm, Android Studio)
+.idea/
+
+# Sublime Text & Vim
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# ------------------------------------------------------------------------------
+# Operating System Files
+# ------------------------------------------------------------------------------
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
